@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HTML milestone</title>
+</head>
+<body>
+  <header>
+    <img src="https://res.cloudinary.com/dtz0urit6/image/upload/q_auto:best,f_jpg/cloudinary-tools-uploads/bdp46o0w7zbnxf9phebz" width="100px" alt="image of a planet as logo">
+  </header>
+  <main>
+    <hr> <br> <br>
+    <h1>
+      Explore Our Solar System <br> Through Data
+    </h1>
+    <p>
+      Understand the planet not just by name, but my memorable <br> facts. From size and mass to gravity and density, this page <br> breaks down the solar system in a clear, data-driven way.
+    </p> <br>
+
+    <table style="width: 30%;">
+    <tr>
+      <td><u><strong>Explore data</strong></u></td>
+      <td style="text-align: right;"><u><strong>contact us</strong></u></td>
+    </tr>
+  </table>
+
+    <hr>
+
+    <h2>Have Question About Planetary Science?</h2>
+    <p>Interested in learning more about space, astronomy or how planetary data is collected and analysed</p>
+    <p>Reach out and we'll get back to you</p>
+  
+    <form action="home.html">
+      <label for="fullname"><strong>Full Name*</strong></label>
+      <p><input required type="text" id="fullname" name="fullname" placeholder="Full name"></p>
+      
+      <label for="email"><strong>Email*</strong></label>
+      
+      <p><input required type="email" id="email" name="email" placeholder="example@example.com"></p> 
+      
+      <label for="city"><strong>City*</strong></label> <p><select name="city" id="city">
+        <option value="choose-city">Choose City</option>
+        <option value="warri">Warri</option>
+        <option value="warri">Sapele</option>
+        <option value="warri">Asaba</option>
+        <option value="warri">Agbor</option>
+      </select></p>
+      
+      <label for="phonenumber"><strong>Phone Number*</strong></label>
+      <p><input type="tel" id="phonenumber" name="phonenumber" placeholder="Please enter a valid phone  number" required></p>
+
+      <label for="message"><strong>Message</strong></label><br> <br>
+      <textarea name="message" id="message" placeholder="enter your message" maxlength="100"></textarea><span><br>100 Characters</span><br><br>
+
+      <label><strong>How Would we contact you?</strong></label><br>
+      <input type="radio" id="phone" name="contact-method" value="phone">
+      <label for="phone">Phone</label>
+
+      <input type="radio" id="email" name="contact-method" value="email">
+      <label for="email">Email</label>
+      
+      <input type="radio" id="both" name="contact-method" value="both">
+      <label for="both">Both</label><br><br>
+
+      <label><strong>How did you hear about us?</strong></label><br>
+      <input type="checkbox" id="friend" name="cmethod" value="friend">
+      <label for="friend">Friend</label>
+
+      <input type="checkbox" id="tsacademy" name="cmethod" value="tsacademy">
+      <label for="tsacademy">TS Academy</label>
+
+      <input type="checkbox" name="cmethod" id="others" value="others">
+      <label for="others">Others</label>
+
+    </form>
+  <hr>
+  </main>
+</body>
+</html>
