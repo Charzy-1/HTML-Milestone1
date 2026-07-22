@@ -4,115 +4,73 @@
   <title>HTML milestone</title>
 </head>
 <body>
-  <header>
-    <img src="https://res.cloudinary.com/afpqhel4/image/upload/v1784652768/alexantropov86-earth-2113656_1920_fesh1r.jpg" width="100px" alt="image of a planet as logo">
+  <header class="header">
+    <img src="https://res.cloudinary.com/afpqhel4/image/upload/v1784652768/alexantropov86-earth-2113656_1920_fesh1r.jpg" width="100px" height="100px" alt="image of a planet as logo">
   </header>
-  <main>
+
+<main class="main-content">
     <hr> <br> 
+
+  <section class="hero-section">
     <h1>
       Explore Our Solar System <br> Through Data
     </h1>
     <p>
       Understand the planet not just by name, but my memorable <br> facts. From size and mass to gravity and density, this page <br> breaks down the solar system in a clear, data-driven way.
     </p> <br>
-
+    <a href="#planetary-data"><strong><u>Explore the data</u></strong></a>
     
-     <!-- CORRECTION 1: Contact us now links to the form -->
-    <a href="#contact-form"><strong><u>Contact us</u></strong></a>
-
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-    <!-- CORRECTION 2: Explore data now links to the table -->
-    <a href="#planetary-data"><strong><u>Explore data</u></strong></a>
+    <a href="#contact-form"><strong><u>Contact us</u></strong></a>
+  </section>
+
     <hr>
     <br>
-    <h2>
-      How Planetary Data Helps Us understand Space
-    </h2>
-    <p>Planetary science goes beyond images. Comparing <strong>mass, diameter, gravity</strong> and <strong>density,</strong><br>we gain insighht into how planets form, behave and interact within the solar sytem.</p>
+  <section class="video-section">
+      <h2>
+        How Planetary Data Helps Us understand Space
+      </h2>
+      <p>Planetary science goes beyond images. Comparing <strong>mass, diameter, gravity</strong> and <strong>density,</strong><br>we gain insight into how planets form, behave and interact within the solar system.</p>
 
-    <video width="640" height="360" autoplay muted loop>
-  <source src="https://res.cloudinary.com/afpqhel4/video/upload/v1784525160/istockphoto-2148435349-640_adpp_is_rusqlp.mp4" type="video/mp4">
-  </video>
-<br> <br> <br> <br>
-    
-    <hr> <br> 
-  <h2>Visualizing the Differences Between Planets</h2>
-  <p>Each planet in our solar system has unique physical characteristics. Visual comparisons help highlight how vastly <br> different terretial planets are from gas giants and ice giants</p>
-  <figure style="margin: 0;">
-  <img src="https://res.cloudinary.com/afpqhel4/image/upload/v1784525862/qimono-earth-1365995_1920_gxfzyy.jpg" width="600px" alt="image showing how planet form" onmouseover="this.nextElementSibling.removeAttribute('hidden')" onmouseout="this.nextElementSibling.setAttribute('hidden', 'hidden')">
-  <figcaption hidden>An artistic visualization of the Earth and the glowing universe.</figcaption>
-</figure>
+      <video width="640" height="360" autoplay muted loop>
+        <source src="https://res.cloudinary.com/afpqhel4/video/upload/v1784525160/istockphoto-2148435349-640_adpp_is_rusqlp.mp4" type="video/mp4">
+    </video>
+  </section>
+    <br> <br> 
+  
+   <hr> <br> 
+  <section class="image-section">
+      <h2>Visualizing the Differences Between Planets</h2>
+      <p>Each planet in our solar system has unique physical characteristics. Visual comparisons help highlight how vastly <br> different terrestial planets are from gas giants and ice giants</p>
+    <figure style="margin: 0;">
+      <img src="https://res.cloudinary.com/afpqhel4/image/upload/v1784525862/qimono-earth-1365995_1920_gxfzyy.jpg" width="650px" height="400px" alt="image showing how planet form" onmouseover="this.nextElementSibling.removeAttribute('hidden')" onmouseout="this.nextElementSibling.setAttribute('hidden', 'hidden')">
+      <figcaption hidden>An artistic visualization of the Earth and the glowing universe.</figcaption>
+    </figure>
+  </section>
     <br><br> <br>
   <hr>
-    <h2 id="planetary-data">Planetary Facts at a Glance</h2>
-    <p>Below is a comparative table of majoy planets in our   solar system. The data highlights key <br> physical   properties used by astronomers and researchers worldwide.</p><br>
-    <p><strong>Data about the planets of our solar syttem (Planetary facts taken by Nasa)</strong></p>
 
-    <table border="3">
-      <tr>
-        <th colspan="2"></th>
-        <th>Name</th>
-        <th>Mass (1024kg)</th>
-        <th>Diameter (km)</th>
-        <th>Density (kg/m3)</th>
-        <th>Gravity (n/m2)</th>
-      </tr>
-      
-      <tr>
-        <th rowspan="4" colspan="2">Terrestial</th>
-        <td>Mercury</td>
-        <td>0.330</td>
-        <td>4,878</td>
-        <td>5427</td>
-        <td>3.7</td>
-      </tr>
+  <section class="table-section" id="planetary-data">
+    <h2>Planetary Facts at a Glance</h2>
+    <p>Below is a comparative table of major planets in our   solar system. The data highlights key <br> physical   properties used by astronomers and researchers worldwide.</p><br>
 
-      <tr>
-        <td>Venus</td>
-        <td>0.330</td>
-        <td>4,878</td>
-        <td>5427</td>
-        <td>3.7</td>
-      </tr>
+    
+  <caption><strong>Data about the planets of our solar system (Planetary facts taken by Nasa)</strong></caption>
 
-      <tr>
-        <td>Earth</td>
-        <td>0.330</td>
-        <td>4,878</td>
-        <td>5427</td>
-        <td>3.7</td>
-      </tr>
-
-      <tr>
-        <td>Mars</td>
-        <td>0.330</td>
-        <td>4,878</td>
-        <td>5427</td>
-        <td>3.7</td>
-      </tr>
-
-      <tr>
-        <th rowspan="4">Jovian Planets</th>
-        <th rowspan="2">Gas Giants</th>
-        <td>Jupiter</td>
-        <td>0.330</td>
-        <td>4,878</td>
-        <td>5427</td>
-        <td>3.7</td>
-      </tr>
-
-      <tr>
-        <td>Saturn</td>
-        <td>0.330</td>
-        <td>4,878</td>
-        <td>5427</td>
-        <td>3.7</td>
-      </tr>
+  <table border="3">
+    <tr>
+      <th colspan="2"></th>
+      <th scope="col">Name</th>
+      <th scope="col">Mass (10²⁴ kg)</th>
+      <th scope="col">Diameter (km)</th>
+      <th scope="col">Density (kg/m³)</th>
+      <th scope="col">Gravity (m/s²)</th>
+    </tr>
 
     <tr>
-      <th rowspan="2">Ice Giants</th>
-      <td>Uranus</td>
+      <th scope="rowgroup" rowspan="4" colspan="2">Terrestrial</th>
+      <th scope="row">Mercury</th>
       <td>0.330</td>
       <td>4,878</td>
       <td>5427</td>
@@ -120,187 +78,238 @@
     </tr>
 
     <tr>
-      <td>Neptune</td>
-      <td>0.330</td>
-      <td>4,878</td>
-      <td>5427</td>
+      <th scope="row">Venus</th>
+      <td>4.87</td>
+      <td>12,104</td>
+      <td>5243</td>
+      <td>8.9</td>
+    </tr>
+
+    <tr>
+      <th scope="row">Earth</th>
+      <td>5.97</td>
+      <td>12,756</td>
+      <td>5514</td>
+      <td>9.8</td>
+    </tr>
+
+    <tr>
+      <th scope="row">Mars</th>
+      <td>0.642</td>
+      <td>6,792</td>
+      <td>3933</td>
       <td>3.7</td>
     </tr>
 
     <tr>
-      <th colspan="2">Duarf Planets</th>
-      <td>Pluto</td>
-      <td>0.330</td>
-      <td>4,878</td>
-      <td>5427</td>
-      <td>3.7</td>
+      <th scope="rowgroup" rowspan="4">Jovian Planets</th>
+      <th scope="rowgroup" rowspan="2">Gas Giants</th>
+      <th scope="row">Jupiter</th>
+      <td>1898</td>
+      <td>142,984</td>
+      <td>1326</td>
+      <td>23.1</td>
+    </tr>
+
+    <tr>
+      <th scope="row">Saturn</th>
+      <td>568</td>
+      <td>120,536</td>
+      <td>687</td>
+      <td>9.0</td>
+    </tr>
+
+    <tr>
+      <th scope="rowgroup" rowspan="2">Ice Giants</th>
+      <th scope="row">Uranus</th>
+      <td>86.8</td>
+      <td>51,118</td>
+      <td>1271</td>
+      <td>8.7</td>
+    </tr>
+
+    <tr>
+      <th scope="row">Neptune</th>
+      <td>102</td>
+      <td>49,528</td>
+      <td>1638</td>
+      <td>11.0</td>
+    </tr>
+
+    <tr>
+      <th scope="rowgroup" colspan="2">Dwarf Planets</th>
+      <th scope="row">Pluto</th>
+      <td>0.0146</td>
+      <td>2,370</td>
+      <td>2095</td>
+      <td>0.7</td>
     </tr>
   </table>
 
-<br><br>
-    
-    <hr>
+  </section>
 
-    <h2 id="contact-form">Have Question About Planetary Science?</h2>
+  
+
+    <br><br>
+    <hr>
+    
+  <section class="contact-section" id="contact-form">
+    <h2 ">Have Question About Planetary Science?</h2>
     <p>Interested in learning more about space, astronomy or how planetary data is collected and analysed?</p>
     <p>Reach out and we'll get back to you</p>
-  
+    
     <form action="home.html">
 
-  <p>
-    <label for="fullname"><strong>Full Name*</strong></label><br>
-    <input
-      type="text"
-      id="fullname"
-      name="fullname"
-      placeholder="Full name"
-      required
-      minlength="10"
-      maxlength="20"
-    >
-  </p>
+      <p>
+        <label for="fullname"><strong>Full Name*</strong></label><br>
+        <input
+          type="text"
+          id="fullname"
+          name="fullname"
+          placeholder="Full name"
+          required
+          minlength="10"
+          maxlength="20"
+        >
+      </p>
 
-  <p>
-    <label for="email"><strong>Email*</strong></label><br>
-    <input
-      type="email"
-      id="email"
-      name="email"
-      placeholder="example@example.com"
-      required
-    >
-  </p>
+      <p>
+        <label for="email"><strong>Email*</strong></label><br>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@example.com"
+          required
+        >
+      </p>
 
-  <p>
-    <label for="city"><strong>City*</strong></label><br>
-    <select name="city" id="city" required>
-      <option value="">Choose City</option>
-      <option value="warri">Warri</option>
-      <option value="sapele">Sapele</option>
-      <option value="asaba">Asaba</option>
-      <option value="agbor">Agbor</option>
-      <option value="ughelli">Ughelli</option>
-      <option value="benin-city">Benin City</option>
-      <option value="abraka">Abraka</option>
-      <option value="ozoro">Ozoro</option>
-      <option value="effurun">Effurun</option>
-      <option value="ukwuani">Ukwuani</option>
-    </select>
-  </p>
+      <p>
+        <label for="city"><strong>City*</strong></label><br>
+        <select name="city" id="city" required>
+          <option value="">Choose City</option>
+          <option value="warri">Warri</option>
+          <option value="sapele">Sapele</option>
+          <option value="asaba">Asaba</option>
+          <option value="agbor">Agbor</option>
+          <option value="ughelli">Ughelli</option>
+          <option value="benin-city">Benin City</option>
+          <option value="abraka">Abraka</option>
+          <option value="ozoro">Ozoro</option>
+          <option value="effurun">Effurun</option>
+          <option value="ukwuani">Ukwuani</option>
+        </select>
+      </p>
 
-  <p>
-    <label for="phonenumber"><strong>Phone Number*</strong></label><br>
-    <input
-      type="tel"
-      id="phonenumber"
-      name="phonenumber"
-      placeholder="Please enter a valid phone number"
-      required
-      maxlength="11"
-    >
-  </p>
+      <p>
+        <label for="phonenumber"><strong>Phone Number*</strong></label><br>
+        <input
+          type="tel"
+          id="phonenumber"
+          name="phonenumber"
+          placeholder="Please enter a valid phone number"
+          required
+          maxlength="11"
+        >
+      </p>
 
-  <p>
-    <label for="message"><strong>Message</strong></label><br>
-    <textarea
-      name="message"
-      id="message"
-      placeholder="Enter your message"
-      maxlength="100"
-    ></textarea>
+      <p>
+        <label for="message"><strong>Message</strong></label><br>
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Enter your message"
+          maxlength="100"
+          required
+        ></textarea>
+        <br>
+        100 characters
+      </p>
+
+      <p>
+      <strong>How would we contact you?</strong><br>
+
+      <input
+        type="radio"
+        id="phone"
+        name="contact-method"
+        value="phone"
+        required
+      >
+      <label for="phone">Phone</label>
+
+      <input
+        type="radio"
+        id="contact-email"
+        name="contact-method"
+        value="email"
+      >
+      <label for="contact-email">Email</label>
+
+      <input
+        type="radio"
+        id="both"
+        name="contact-method"
+        value="both"
+      >
+      <label for="both">Both</label>
+      </p>
+
+      <p>
+      <strong>How did you hear about us?</strong><br>
+
+      <input
+        type="checkbox"
+        id="friend"
+        name="cmethod"
+        value="friend"
+      >
+      <label for="friend">Friend</label>
+
+      <input
+        type="checkbox"
+        id="tsacademy"
+        name="cmethod"
+        value="tsacademy"
+      >
+      <label for="tsacademy">TS Academy</label>
+
+      <input
+        type="checkbox"
+        id="others"
+        name="cmethod"
+        value="others"
+      >
+      <label for="others">Others</label>
+      </p>
+
+      <p>
+        <button type="submit">Submit</button>
+      </p>
+
+    </form>
+  </section>
+
+      <hr><br>
+</main>
+
+  <footer class="footer">
+    <h3><strong>About us</strong></h3>
+    <ul>
+        <li><a href="#">Planetary Facts</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">World Records</a></li>
+        <li><a href="#">Guides</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms &amp; Conditions</a></li>
+    </ul>
+
+    <hr><br>
+    ©2026 Your Name. &nbsp;&nbsp;&nbsp; Design by Amaka &nbsp;&nbsp;&nbsp; All rights reserved
     <br>
-    Maximum of 100 characters
-  </p>
-
-  <p>
-    <strong>How would we contact you?</strong><br>
-
-    <input
-      type="radio"
-      id="phone"
-      name="contact-method"
-      value="phone"
-      required
-    >
-    <label for="phone">Phone</label>
-
-    <input
-      type="radio"
-      id="contact-email"
-      name="contact-method"
-      value="email"
-    >
-    <label for="contact-email">Email</label>
-
-    <input
-      type="radio"
-      id="both"
-      name="contact-method"
-      value="both"
-    >
-    <label for="both">Both</label>
-  </p>
-
-  <p>
-    <strong>How did you hear about us?</strong><br>
-
-    <input
-      type="checkbox"
-      id="friend"
-      name="cmethod"
-      value="friend"
-    >
-    <label for="friend">Friend</label>
-
-    <input
-      type="checkbox"
-      id="tsacademy"
-      name="cmethod"
-      value="tsacademy"
-    >
-    <label for="tsacademy">TS Academy</label>
-
-    <input
-      type="checkbox"
-      id="others"
-      name="cmethod"
-      value="others"
-    >
-    <label for="others">Others</label>
-  </p>
-
-  <p>
-    <button type="submit">Submit</button>
-  </p>
-
-</form>
-
-      <hr>
-      <h3><strong>About us</strong></h3>
-      <ul>
-        <li><strong>Planetary facts</strong></li><br>
-        <li><strong>Gallery</strong></li><br>
-        <li><strong>World Records</strong></li><br>
-        <li><strong>Guides</strong></li><br>
-      </ul>
-      <hr>
-    
-  </main>
-
-  <footer>
-    <a href="#">©2026 Your Name.</a>
-    &nbsp;&nbsp;&nbsp;
-    <a href="#">Design by Amaka</a>
-    &nbsp;&nbsp;&nbsp;
-    <a href="#">All rights reserved</a>
-
     <br>
-    <br>
+    Privacy &amp; Policy &nbsp;&nbsp;&nbsp; Terms &amp; Condition
+</footer>
 
-    <a href="#">Privacy &amp; Policy</a>
-    &nbsp;&nbsp;&nbsp;
-    <a href="#">Terms &amp; Condition</a>
-
-  </footer>
 </body>
 </html>
