@@ -17,7 +17,13 @@
     </p> <br>
 
     
-    <u><strong>Explore data</strong></u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u><strong>Contact us</strong></u><br><br><br>
+     <!-- CORRECTION 1: Contact us now links to the form -->
+    <a href="#contact-form"><strong><u>Contact us</u></strong></a>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <!-- CORRECTION 2: Explore data now links to the table -->
+    <a href="#planetary-data"><strong><u>Explore data</u></strong></a>
     <hr>
     <br>
     <h2>
@@ -39,11 +45,11 @@
 </figure>
     <br><br> <br>
   <hr>
-    <h2>Planetary Facts at a Glance</h2>
+    <h2 id="planetary-data">Planetary Facts at a Glance</h2>
     <p>Below is a comparative table of majoy planets in our   solar system. The data highlights key <br> physical   properties used by astronomers and researchers worldwide.</p><br>
     <p><strong>Data about the planets of our solar syttem (Planetary facts taken by Nasa)</strong></p>
 
-    <table border="">
+    <table border="3">
       <tr>
         <th colspan="2"></th>
         <th>Name</th>
@@ -123,7 +129,7 @@
 
     <tr>
       <th colspan="2">Duarf Planets</th>
-      <td>Pluto</th>
+      <td>Pluto</td>
       <td>0.330</td>
       <td>4,878</td>
       <td>5427</td>
@@ -131,59 +137,143 @@
     </tr>
   </table>
 
-
+<br><br>
     
     <hr>
 
-    <h2>Have Question About Planetary Science?</h2>
+    <h2 id="contact-form">Have Question About Planetary Science?</h2>
     <p>Interested in learning more about space, astronomy or how planetary data is collected and analysed?</p>
     <p>Reach out and we'll get back to you</p>
   
     <form action="home.html">
-      <label for="fullname"><strong>Full Name*</strong></label>
-      <p><input required type="text" id="fullname" name="fullname" placeholder="Full name"></p>
-      
-      <label for="email"><strong>Email*</strong></label>
-      
-      <p><input required type="email" id="email" name="email" placeholder="example@example.com"></p> 
-      
-      <label for="city"><strong>City*</strong></label> <p><select name="city" id="city" required>
-        <option value="">Choose City</option>
-        <option value="warri">Warri</option>
-        <option value="warri">Sapele</option>
-        <option value="warri">Asaba</option>
-        <option value="warri">Agbor</option>
-        <option value="ughelli">Ughelli</option>
-      </select></p>
-      
-      <label for="phonenumber"><strong>Phone Number*</strong></label>
-      <p><input type="tel" id="phonenumber" name="phonenumber" placeholder="Please enter a valid phone  number" required maxlength="11"></p>
 
-      <label for="message"><strong>Message</strong></label><br> <br>
-      <textarea name="message" id="message" placeholder="enter your message" maxlength="100"></textarea><span><br>100 Characters</span><br><br>
+  <p>
+    <label for="fullname"><strong>Full Name*</strong></label><br>
+    <input
+      type="text"
+      id="fullname"
+      name="fullname"
+      placeholder="Full name"
+      required
+      minlength="10"
+      maxlength="20"
+    >
+  </p>
 
-      <label><strong>How Would we contact you?</strong></label><br>
-      <input type="radio" id="phone" name="contact-method" value="phone">
-      <label for="phone">Phone</label>
+  <p>
+    <label for="email"><strong>Email*</strong></label><br>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="example@example.com"
+      required
+    >
+  </p>
 
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" id="email" name="contact-method" value="email">
-      <label for="email">Email</label>
-      
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" id="both" name="contact-method" value="both">
-      <label for="both">Both</label><br><br>
+  <p>
+    <label for="city"><strong>City*</strong></label><br>
+    <select name="city" id="city" required>
+      <option value="">Choose City</option>
+      <option value="warri">Warri</option>
+      <option value="sapele">Sapele</option>
+      <option value="asaba">Asaba</option>
+      <option value="agbor">Agbor</option>
+      <option value="ughelli">Ughelli</option>
+      <option value="benin-city">Benin City</option>
+      <option value="abraka">Abraka</option>
+      <option value="ozoro">Ozoro</option>
+      <option value="effurun">Effurun</option>
+      <option value="ukwuani">Ukwuani</option>
+    </select>
+  </p>
 
-      <label><strong>How did you hear about us?</strong></label><br>
-      <input type="checkbox" id="friend" name="cmethod" value="friend">
-      <label for="friend">Friend</label>
+  <p>
+    <label for="phonenumber"><strong>Phone Number*</strong></label><br>
+    <input
+      type="tel"
+      id="phonenumber"
+      name="phonenumber"
+      placeholder="Please enter a valid phone number"
+      required
+      maxlength="11"
+    >
+  </p>
 
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="tsacademy" name="cmethod" value="tsacademy">
-      <label for="tsacademy">TS Academy</label>
+  <p>
+    <label for="message"><strong>Message</strong></label><br>
+    <textarea
+      name="message"
+      id="message"
+      placeholder="Enter your message"
+      maxlength="100"
+    ></textarea>
+    <br>
+    Maximum of 100 characters
+  </p>
 
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="cmethod" id="others" value="others">
-      <label for="others">Others</label><br><br>
+  <p>
+    <strong>How would we contact you?</strong><br>
 
-      <button type="submit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Submit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
-      <br><br>
+    <input
+      type="radio"
+      id="phone"
+      name="contact-method"
+      value="phone"
+      required
+    >
+    <label for="phone">Phone</label>
+
+    <input
+      type="radio"
+      id="contact-email"
+      name="contact-method"
+      value="email"
+    >
+    <label for="contact-email">Email</label>
+
+    <input
+      type="radio"
+      id="both"
+      name="contact-method"
+      value="both"
+    >
+    <label for="both">Both</label>
+  </p>
+
+  <p>
+    <strong>How did you hear about us?</strong><br>
+
+    <input
+      type="checkbox"
+      id="friend"
+      name="cmethod"
+      value="friend"
+    >
+    <label for="friend">Friend</label>
+
+    <input
+      type="checkbox"
+      id="tsacademy"
+      name="cmethod"
+      value="tsacademy"
+    >
+    <label for="tsacademy">TS Academy</label>
+
+    <input
+      type="checkbox"
+      id="others"
+      name="cmethod"
+      value="others"
+    >
+    <label for="others">Others</label>
+  </p>
+
+  <p>
+    <button type="submit">Submit</button>
+  </p>
+
+</form>
 
       <hr>
       <h3><strong>About us</strong></h3>
@@ -194,14 +284,23 @@
         <li><strong>Guides</strong></li><br>
       </ul>
       <hr>
-    </form>
+    
   </main>
 
   <footer>
-    ©2026 Your Name. &nbsp;&nbsp;&nbsp; Design by Amaka &nbsp;&nbsp;&nbsp; All rights reserved
+    <a href="#">©2026 Your Name.</a>
+    &nbsp;&nbsp;&nbsp;
+    <a href="#">Design by Amaka</a>
+    &nbsp;&nbsp;&nbsp;
+    <a href="#">All rights reserved</a>
+
     <br>
     <br>
-    Privacy &amp; Policy &nbsp;&nbsp;&nbsp; Terms &amp; Condition
-</footer>
+
+    <a href="#">Privacy &amp; Policy</a>
+    &nbsp;&nbsp;&nbsp;
+    <a href="#">Terms &amp; Condition</a>
+
+  </footer>
 </body>
 </html>
